@@ -1,6 +1,5 @@
-import { useEffect } from "react";
 import "./App.css";
-import Header from "./components/Header/Header";
+import Homepage from "./components/HomePage/Homepage";
 
 function App() {
   const BASE_URL = "https://api.themoviedb.org/3";
@@ -8,7 +7,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <Homepage />
     </div>
   );
 }
