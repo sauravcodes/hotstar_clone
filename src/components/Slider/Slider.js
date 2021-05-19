@@ -34,7 +34,6 @@ function Slider({ movies }) {
           <Title>{movie?.title}</Title>
           <Subtitle> Hotstar Special - Drama</Subtitle>
           <Desc>{movie?.overview}</Desc>
-          )}
         </TextDiv>
         <ImageDiv>
           <img

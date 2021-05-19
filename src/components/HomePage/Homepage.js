@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Header from "../Header/Header";
 import Slider from "../Slider/Slider";
 import axios from "axios";
+import Row from "../Row/Row";
+import requests from "../../requests";
 
 function Homepage() {
   const BASE_URL = "https://api.themoviedb.org/3";
@@ -23,6 +25,8 @@ function Homepage() {
     <>
       <Header />
       <Slider movies={movie} />
+      <Row title="Trending Movies" fetchUrl={requests.fetchTrending} />
+      <Row title="Action Movies" fetchUrl={requests.fetchActionMovies} />
     </>
   );
 }
